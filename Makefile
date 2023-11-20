@@ -10,7 +10,7 @@ ifndef $(GOPATH)
     export GOPATH
 endif
 
-.PHONY: install-foundry
+.PHONY: instal-foundry
 install-foundry:
 	curl -L https://foundry.paradigm.xyz | bash
 	~/.foundry/bin/foundryup --commit $(FOUNDRY_COMMIT)
